@@ -30,7 +30,7 @@ public class GuardScript : MonoBehaviour
                     var main = ps.main;
                     main.startColor = alertColor;
                     if (alarm < 1f)
-                        alarm += 0.000000001f;
+                        alarm += 0.01f;
                 }
             }
         }
