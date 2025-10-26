@@ -3,6 +3,8 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Player Settings")]
+    public float playerVisibility = 1.0f;
     [Header("References")]
     // призначити в інспекторі дочірню камеру
     public Transform cameraTransform;
