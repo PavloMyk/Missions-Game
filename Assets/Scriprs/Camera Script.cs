@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
-public class GuardScript : MonoBehaviour
+public class CameraScript : MonoBehaviour
 {
     [Header("HeadReferences")]
     public GameObject player;
@@ -63,8 +63,8 @@ public class GuardScript : MonoBehaviour
         {
             if (alarm != 1f)
             {
-                 // якщо гравець поза зоною, зменшуЇмо alarm
-               alarm = Mathf.Clamp01(alarm - antiAlarmSpeed);
+                // якщо гравець поза зоною, зменшуЇмо alarm
+                alarm = Mathf.Clamp01(alarm - antiAlarmSpeed);
             }
         }
         if (health <= 0f)
